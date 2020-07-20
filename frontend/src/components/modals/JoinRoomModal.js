@@ -25,7 +25,7 @@ class NewRoomModal extends Component {
     joinRoom = () => {
         let data = {
             room_name: this.state.room_name,
-            room_password: this.state.room_password
+            password: this.state.room_password
         };
         axios.post(Constants.API_JOIN_ROOM, data)
         .then(response => {
