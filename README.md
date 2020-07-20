@@ -1,23 +1,29 @@
 # bitko
 Online Chat Rooms For Everyone.
+<br />
 Bitko, where people talk online with each other on various topics.
 
 # To run the backend:
-```json
-virtualenv env
-source env/bin/activate
+```
+git clone https://github.com/erfanhs/bitko.git
+pip3 install virtualenv
+virtualenv venv
+source venv/bin/activate
+cd bitko
 pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 ```
 Make sure you have an instance of redis running.
 
 # To run the frontend:
-```json
-npm i
-npm start
+```
+sudo npm i
+sudo npm start
 ```
 
 # To build for deployment:
-```json
-npm run build
+```
+sudo npm run-script build
 ```
