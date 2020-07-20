@@ -192,24 +192,3 @@ def joinRoom(request):
         room.save()
     serializer = RoomSerializer(room)
     return Response(serializer.data)
-
-
-
-
-# @api_view(['POST'])
-# @permission_classes([IsAuthenticated])
-# @parser_classes([MultiPartParser])
-# def setProfilePic(request):
-#     user = request.user
-
-#     file_obj = request.data['file']
-#     profilePic = ProfilePicture.objects.filter(user=user)
-#     if profilePic:
-#         profilePic.update(pic=file_obj)
-#     else:
-#         ProfilePicture.objects.create(user=user, pic=file_obj)
-
-#     return Response({'response': 'uploaded'}, status=204)
-
-
-
