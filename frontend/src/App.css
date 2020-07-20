@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+.ant-modal-close-x {
+    display: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(44,51,56);
+    background-size: cover;
+    min-height: 400px;
+}

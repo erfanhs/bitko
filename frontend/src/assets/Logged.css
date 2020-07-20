@@ -1,0 +1,64 @@
+#logged-user button {
+    width: 100px;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    margin-top: 30px;
+    background-color: #b0b3b8;
+    transition: all;
+    transition-duration: .3s;
+}
+#logged-user button:focus {
+    outline: none;
+}
+#logged-user button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px white;
+}
+#logged-user h4 {
+    color: white;
+    margin-top: 50px;
+}
+#new_room {
+    margin-right: 4px;
+}
+#new_room i {
+    color: green;
+}
+#join_room {
+    margin-left: 4px;
+}
+#join_room i {
+    color: red;
+}
+#settings_button i {
+    color: yellow;
+}
+#settings_button {
+    margin-top: 15px !important;
+}
+#rooms {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+#rooms div {
+    width: 130px;
+    height: 130px;
+    background-color: #131414;
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: .3s;
+}
+#rooms-container h3 {
+    margin-top: 40px;
+    color: white;
+}
+#rooms div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}

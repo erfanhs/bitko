@@ -1,0 +1,36 @@
+@media only screen and (max-width: 700px) {
+    #main-container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    #chat {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+    }
+    #chat header {
+        border-radius: 0 !important;
+    }
+    #chat header div {
+        padding-top: 0.4% !important;
+    }
+    #chat footer {
+        border-radius: 0 !important;
+    }
+    #chat footer button {
+        width: 20% !important;
+        height: 80% !important;
+        margin-top: 0.3% !important;
+    }
+    #home {
+        width: 95% !important;
+        margin-left: 2.5% !important;
+        margin-top: 3% !important;
+    }
+    .online-users {
+        padding-left: 10px;
+    }
+    .chat-action {
+        padding-right: 10px;
+    }
+}

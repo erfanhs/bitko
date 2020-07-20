@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</head>
+<body>
+    <div id="login-form">
+        <input type="username" placeholder="username" id="username"/><br>
+        <input type="password" placeholder="password" id="password"/><br>
+        <button id="login-submit">login</button><br>
+        <a href="/signup">signup</a>
+    </div>
+
+    <script>
+
+        document.getElementById('login-submit').onclick = function() {
+            username = document.getElementById('username').value;
+            password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert('please fill out the fields !');
+                return
+            }
+
+            let data = {
+                username: username,
+                password: password
+            }
+            let config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+
+            axios.post(`http://127.0.0.1:8000/api/v1/auth/login/`, data, config)
+            .then(response => {
+                access_token = "Bearer " + response.data.access;
+                refresh_token = response.data.refresh;
+                localStorage['access_token'] = access_token;
+                localStorage['refresh_token'] = refresh_token;
+                window.location.href = '/';
+            })
+            .catch(error => {
+                alert(error.response.data.detail);
+            });
+            
+        }
+
+    </script>
+</body>
+</html>
