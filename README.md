@@ -23,11 +23,13 @@ Make sure you have an instance of redis running.
 
 # To run the frontend:
 ```
+cd bitko/frontend
 sudo npm i
 sudo npm start
 ```
 
 # To build for deployment:
 ```
+cd bitko/frontend
 sudo npm run-script build
 ```
