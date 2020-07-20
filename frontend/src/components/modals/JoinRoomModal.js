@@ -5,7 +5,7 @@ import * as Constants from '../../constants';
 import axios from 'axios';
 
 
-class NewRoomModal extends Component {
+class JoinRoomModal extends Component {
 
 
     state = {
@@ -60,4 +60,4 @@ class NewRoomModal extends Component {
     }
 }
 
-export default NewRoomModal;
+export default JoinRoomModal;
