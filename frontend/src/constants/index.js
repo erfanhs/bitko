@@ -1,5 +1,5 @@
-const host = window.location.hostname;
-const ROOT_PATH = host + ':8000/';
+const host = window.location.host;
+const ROOT_PATH = host + '/';
 const API_BASE = 'http://' + ROOT_PATH + 'api/v1/';
 
 export const API_LOGIN = API_BASE + 'auth/login/';
