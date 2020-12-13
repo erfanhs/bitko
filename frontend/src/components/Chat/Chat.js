@@ -85,7 +85,7 @@ class Chat extends Component {
         return (
             <div id="chat-body">
                 <div id="chat" className="center-block">
-                    <Header action={this.state.isConnecting ? 'connecting...' : 'connected'} roomName={this.props.room.room_name} users={this.state.users} members={this.state.members}/>
+                    <Header action={this.state.isConnecting ? 'Connecting...' : 'Connected'} roomName={this.props.room.room_name} users={this.state.users} members={this.state.members}/>
                     <Middle messages={this.state.messages}/>
                     <Footer sendMessage={this.sendMessage}/>
                 </div>

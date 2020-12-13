@@ -1,4 +1,4 @@
-const host = window.location.host;
+const host = (window.location.host.includes(':3000')) ? window.location.host.replace(':3000', ':8000') : window.location.host;
 const ROOT_PATH = host + '/';
 const API_BASE = 'http://' + ROOT_PATH + 'api/v1/';
 

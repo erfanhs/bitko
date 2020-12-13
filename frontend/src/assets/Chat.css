@@ -115,11 +115,11 @@
     text-align: left;
     width: 40%;
 }
-.room-name {
+.chat-action {
     text-align: center;
     width: 20%;
 }
-.chat-action {
+.room-name {
     padding-right: 13px;
     text-align: right;
     width: 40%;
