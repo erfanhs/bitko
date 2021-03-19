@@ -12,7 +12,7 @@ cryptography==3.2
 daphne==2.5.0
 Django==3.0.8
 django-cors-headers==3.4.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 djangorestframework-simplejwt==4.4.0
 hiredis==1.1.0
 hyperlink==19.0.0
